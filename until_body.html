@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' type='text/css' href='http://bidouillage.e-monsite.com/medias/files/bootstrap.css' />
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  <script>
+
+function showNextRow() {
+  var currentrow = 0;
+  $('table tr').hide();
+  $('table tr:eq(0)').show();
+  $('#onemore').click(
+    function() {
+      currentrow++;
+      /*$(document.getElementById('myBar')).hide();*/
+      $('table tr:eq(' + currentrow  + ')').show();
+      window.scrollTo(0,document.body.scrollHeight);
+    }
+  );
+}
+
+function move() {
+  var elem = document.getElementById('myBar');
+  var width = 10;
+  var id = setInterval(frame, 10);
+
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    }
+    else
+    {
+      width++;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1 + '%';
+    }
+  }
+}
+
+</script>
+
+<style>
+
+body {
+  background-color: black;
+  color: white;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}
+
+</style>
+
+</head>
+
+<!--<body onload='move(); showNextRow();'>-->

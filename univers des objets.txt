@@ -1,0 +1,23 @@
+﻿#----------------------------------------------------------------------------
+#	Purpose:	To demonstrate automated reasoning in natural language:
+#					Self-generated conclusions, assumptions and questions
+#					and the detection of conflicts and semantic ambiguity
+#	Version:		Thinknowlogy 2016r2 (Restyle)
+#----------------------------------------------------------------------------
+#	Copyright (C) 2009-2016, Menno Mafait. Your suggestions, modifications,
+#	corrections and bug reports are welcome at http://mafait.org/contact/
+#----------------------------------------------------------------------------
+
+# La définition simple.
+un objeta est un objetb ou un objetc.
+un objetc est qual1.
+un objetb est qual2.
+un objetd a un objete et un objetf.
+un objetg est un objeth ou un objeti.
+un objetj est un objetk ou un objetl.
+un objeth est un objetb.
+un objeti est un objetc.
+un objetm est qual1.
+un objetn est qual2.
+un objetk est un objetn ou un objetb.
+un objetl est un objetm ou un objetc.

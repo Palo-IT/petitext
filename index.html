@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style>
+
+body {
+  background: url(univers.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+</style>
+
+</head>
+
+<link rel="stylesheet" type="text/css" href="http://bidouillage.e-monsite.com/medias/files/bootstrap.css" />
+   <body>
+    <br></br>
+    <center><h1>Raisonnement sur des univers de PetiTextes</h1></center>
+    <div style="text-align: right; margin-right: 199px;"> <h2> ... choisissez votre univers</h2> </div>
+    <br></br>
+    <hr></hr>
+    <br></br>
+    <div style="margin-left: 199px;">
+      <form action = "http://127.0.0.1:5000/login" method = "POST">
+        <text name = "text">Definition simple de la famille</text>
+        <input type="HIDDEN" name = "file_name" value = "./definition de famille (simple).txt" />
+        <input type='HIDDEN' name = "new_line" value="" />
+        <input class="btn btn-mini btn-primary" type = "submit" value = "Raisonner" />
+      </form>
+      <br></br>
+      <form action = "http://127.0.0.1:5000/login" method = "POST">
+        <text name = "text">L'univers des objets abstraits</text>
+        <input type="HIDDEN" name = "file_name" value = "./univers des objets.txt" />
+        <input type='HIDDEN' name = "new_line" value="" />
+        <input class="btn btn-mini btn-primary" type = "submit" value = "Raisonner" />
+      </form>
+      <br></br>
+      <form action = "http://127.0.0.1:5000/login" method = "POST">
+        <text name = "text">L'univers de la connaissance des organismes</text>
+        <input type="HIDDEN" name = "file_name" value = "./Connaissance des organismes.txt" />
+        <input type='HIDDEN' name = "new_line" value="" />
+        <input class="btn btn-mini btn-primary" type = "submit" value = "Raisonner" />
+      </form>
+      <br></br>
+    </div>
+
+   </body>
+</html>

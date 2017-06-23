@@ -1,0 +1,37 @@
+#----------------------------------------------------------------------------
+#	Purpose:	To demonstrate automated reasoning in natural language:
+#					Self-generated conclusions, assumptions and questions
+#					and the detection of conflicts and semantic ambiguity
+#	Version:		Thinknowlogy 2016r2 (Restyle)
+#----------------------------------------------------------------------------
+#	Copyright (C) 2009-2016, Menno Mafait. Your suggestions, modifications,
+#	corrections and bug reports are welcome at http://mafait.org/contact/
+#----------------------------------------------------------------------------
+
+# La définition simple d'une famille.
+un animal est une créature.
+un cheval est un animal.
+une personne est un humain.
+un humain est une créature.
+une créature a un corps.
+les créatures ont un corps.
+#C++## Maintenant, tapez des phrases comme celles-ci:
+#C++##
+#C++## Olivier est le père et Amélie est la mère de Pascal, Julien et Lorraine.
+#C++## Pascal est un fils.			Pascal est un homme.
+#C++## Julien est un fils.			Julien est un homme.
+#C++## Lorraine est une fille.		Lorraine est une femme.
+#C++## Olivier est un père.			Olivier est un parent.
+#C++## Amélie est a mère.			Amélie est un parent.
+#C++## Affichez information sur Olivier.	Affichez information sur Amélie.
+#C++## Affichez information sur Pascal.	Affichez information sur Lorraine.
+#C++## Affichez information sur parents.	Affichez information sur enfants.
+#C++## Pascal est un fils de Olivier et Amélie.
+#C++## Julien est un fils de Olivier et Amélie.
+#C++## Lorraine est une fille de Olivier et Amélie.
+#C++##
+#C++## Voir le texte sur les boutons de captures d'écran de la famille
+#C++## (en sous-dossier: captures d'écran) pour plus d'exemples.
+#C++##
+# Essayez les phrases dans toutes sortes de combinaisons et dans un ordre différent.
+# Utilisez le bouton «Videz votre esprit.», «Annuler.» ou «Redémarrer.» pour une nouvelle tentative.
